@@ -16,7 +16,7 @@ Looking around there are many solutions:
 There is an example dataset that generates random tensors with the format of the samples in contrail-detection competition (4D tensor, 2D tensor, string)
 
 ## How to use
-- implement your method under `methods/` implementing `initialize_files(self, source_torch_dataset, dstdir)`, `get_torch_dataset(self)`, `get_name(self)` as in the examples.
+- implement your method under `methods/` implementing `initialize_files(self, source_torch_dataset, dstdir)`, `get_torch_dataset(self)`, `get_name(self)` as in the examples. Here you basically write the fails that you need and create a torch dataset that reads them.
 - put it in `methods/__init__.py`
 - load it in `main.py` and add it to the list of methods to compare
 - you can now use `python main.py --help` to see what the parameters are
